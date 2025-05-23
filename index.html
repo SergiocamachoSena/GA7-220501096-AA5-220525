@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bienvenida Mamá | Apoyo para Madres Gestantes</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-pink-50 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-pink-200 py-6 shadow-md">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6"
+      >
+        <h1 class="text-3xl font-bold text-pink-700">Bienvenida Mamá</h1>
+        <nav class="mt-4 md:mt-0 space-x-6">
+          <a href="#consejos" class="text-pink-800 hover:underline font-medium"
+            >Consejos</a
+          >
+          <a href="#nutricion" class="text-pink-800 hover:underline font-medium"
+            >Nutrición</a
+          >
+          <a href="#contacto" class="text-pink-800 hover:underline font-medium"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex-1 flex items-center justify-center py-12 px-6">
+      <div class="max-w-3xl text-center">
+        <img
+          src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
+          alt="Madre Gestante"
+          class="mx-auto rounded-2xl shadow-lg mb-6 w-56 h-56 object-cover"
+        />
+        <h2 class="text-4xl font-bold text-pink-700 mb-4">
+          ¡Acompañándote en tu dulce espera!
+        </h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Aquí encontrarás información, consejos y apoyo durante cada etapa de
+          tu embarazo. Cuida de ti y tu bebé con amor y confianza.
+        </p>
+        <a
+          href="#consejos"
+          class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-pink-600 transition"
+          >Ver Consejos</a
+        >
+      </div>
+    </section>
+
+    <!-- Consejos -->
+    <section id="consejos" class="bg-white py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold text-pink-700 mb-6 text-center">
+          Consejos para el Embarazo
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h4 class="font-semibold text-pink-800 mb-2">Visitas Médicas</h4>
+            <p class="text-gray-700">
+              Realiza controles prenatales regulares para cuidar tu salud y la
+              de tu bebé.
+            </p>
+          </div>
+          <div
+            class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h4 class="font-semibold text-pink-800 mb-2">Descanso Adecuado</h4>
+            <p class="text-gray-700">
+              Duerme lo suficiente y escucha las señales de tu cuerpo.
+            </p>
+          </div>
+          <div
+            class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h4 class="font-semibold text-pink-800 mb-2">Actividad Física</h4>
+            <p class="text-gray-700">
+              Realiza ejercicios suaves recomendados por tu médico, como caminar
+              o yoga prenatal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutrición -->
+    <section id="nutricion" class="py-12 px-6 bg-pink-50">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold text-pink-700 mb-6 text-center">
+          Nutrición para Mamás Gestantes
+        </h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="text-pink-800 font-semibold mb-2">
+              Alimentos Recomendados
+            </h4>
+            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Frutas y verduras frescas</li>
+              <li>Cereales integrales</li>
+              <li>Proteínas magras (pollo, pescado, huevo, legumbres)</li>
+              <li>Lácteos bajos en grasa</li>
+              <li>Agua en abundancia</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="text-pink-800 font-semibold mb-2">Evita</h4>
+            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Alcohol y tabaco</li>
+              <li>Alimentos ultraprocesados y altos en azúcar</li>
+              <li>Pescados con alto contenido de mercurio</li>
+              <li>Cafeína en exceso</li>
+              <li>Quesos sin pasteurizar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-12 px-6 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold text-pink-700 mb-6 text-center">
+          ¿Tienes dudas o necesitas ayuda?
+        </h3>
+        <form class="space-y-4 bg-pink-50 p-6 rounded-lg shadow-md">
+          <div>
+            <label class="block text-pink-800 font-semibold mb-1" for="nombre"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-300"
+              placeholder="Tu nombre"
+            />
+          </div>
+          <div>
+            <label class="block text-pink-800 font-semibold mb-1" for="email"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-300"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </div>
+          <div>
+            <label class="block text-pink-800 font-semibold mb-1" for="mensaje"
+              >Mensaje</label
+            >
+            <textarea
+              id="mensaje"
+              rows="4"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-300"
+              placeholder="Escribe tu mensaje aquí"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-600 transition"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-200 py-4 mt-8">
+      <div class="container mx-auto text-center text-pink-800 font-medium">
+        &copy; 2024 Bienvenida Mamá. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
